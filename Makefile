@@ -4,7 +4,7 @@ all: configure
 	@$(MAKE) -C src all
 
 clean:
-	@$(MAKE) -C src clean
+	@$(MAKE) -C src -f Makefile.clean clean
 	rm -f config.mk config.mk.tmp
 
 install: configure
